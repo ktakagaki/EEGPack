@@ -4,7 +4,7 @@
 (* BeginPackage *)
 
 
-BeginPackage["EEGPack`Plots`", {"EEGPack`Data`","KazukazuM`","KazukazuM`Utilities`","KazukazuM`Signal`","KazukazuM`Plots`","KazukazuM`Filters`"}];
+BeginPackage["EEGPack`Plots`", {"EEGPack`Data`"(*,"KazukazuM`","KazukazuM`Utilities`","KazukazuM`Signal`","KazukazuM`Plots`","KazukazuM`Filters`"*)}];
 
 
 (* ::Section:: *)

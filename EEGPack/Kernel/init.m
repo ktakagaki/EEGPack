@@ -1,12 +1,17 @@
 (* ::Package:: *)
 
 (* Mathematica Init File *)
+<<HokahokaW`;
+
+
+HHPackageMessage["EEGPack`"]
+
 
 Get[ "EEGPack`Data`"];
 Get[ "EEGPack`Plots`"];
 
 
-Block[{tempData},
+(*Block[{tempData},
 tempData= FindFile["EEGPack`PacletInfo`"];
 If[tempData =!= $Failed,
 	tempData=Import[tempData];
@@ -16,4 +21,4 @@ If[tempData =!= $Failed,
 ];
 
 Print["<<EEGPack version "<>tempData<>" loaded on: "<> DateString[]<>">>"]
-];
+];*)
