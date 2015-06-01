@@ -1,0 +1,107 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2837,         97]
+NotebookOptionsPosition[      2375,         77]
+NotebookOutlinePosition[      2722,         92]
+CellTagsIndexPosition[      2679,         89]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "fileName", "=", "\"\<V:\\\\_results.EEG\\\\0351_\\\\0386.eeg\>\""}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.550481773061433*^9, 3.5504818136547546`*^9}, 
+   3.550481850775878*^9, 3.5504819258561726`*^9, 3.550481993935066*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"fileStream", "=", 
+   RowBox[{"OpenRead", "[", 
+    RowBox[{"fileName", ",", 
+     RowBox[{"BinaryFormat", "->", "True"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"SetStreamPosition", "[", 
+   RowBox[{"fileStream", ",", 
+    RowBox[{"-", "4"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"hSamples", "=", 
+   RowBox[{
+    RowBox[{"BinaryRead", "[", 
+     RowBox[{"fileStream", ",", "\"\<Integer32\>\"", ",", 
+      RowBox[{"ByteOrdering", "->", 
+       RowBox[{"-", "1"}]}]}], "]"}], "/", "2"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.550481815075836*^9, 3.5504818264744883`*^9}, {
+  3.5504819219309483`*^9, 3.550481946899376*^9}, {3.5504819975392723`*^9, 
+  3.55048200414365*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["hSamples"], "Input",
+ CellChangeTimes->{{3.550481828847624*^9, 3.5504818299576874`*^9}}],
+
+Cell[BoxData["5576000"], "Output",
+ CellChangeTimes->{{3.550481830234703*^9, 3.5504818533940277`*^9}, {
+  3.5504819308274565`*^9, 3.5504819481684484`*^9}, {3.550481999131364*^9, 
+  3.5504820052347126`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Close", "[", "fileStream", "]"}], ";"}]], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"SetStreamPosition", "[", 
+    RowBox[{"fileStream", ",", 
+     RowBox[{"hSamples", "*", "2"}]}], "]"}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Read", " ", "and", " ", "process", " ", "header", " ", "information"}], 
+   "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.550481815075836*^9, 3.5504818264744883`*^9}}]
+},
+WindowSize->{712, 867},
+WindowMargins->{{143, Automatic}, {-1032, Automatic}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 266, 6, 31, "Input"],
+Cell[826, 28, 725, 19, 72, "Input"],
+Cell[CellGroupData[{
+Cell[1576, 51, 102, 1, 31, "Input"],
+Cell[1681, 54, 206, 3, 30, "Output"]
+}, Open  ]],
+Cell[1902, 60, 85, 2, 31, "Input"],
+Cell[1990, 64, 381, 11, 72, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

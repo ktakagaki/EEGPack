@@ -1,0 +1,8 @@
+Resources[
+    Version[1],
+    ExecutionBuildCommand["<<EEGPack`"],
+    Paclet[
+        PacletFolder["EEGPack"],
+        FunctionPaclet[False]
+    ]
+]
